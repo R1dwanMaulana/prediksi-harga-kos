@@ -1,6 +1,6 @@
 ### Prediksi harga kos wilayah JATIM (data perkiraan / tanpa survei)
 
-![demo aplikasi]: (img/demo.png)
+![demo aplikasi]: (images/demo%20app.png)
 
 #### Alur Pengerjaan
 - [x] Load dataset
