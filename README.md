@@ -1,5 +1,7 @@
 ### Prediksi harga kos wilayah JATIM (data perkiraan / tanpa survei)
 
+![demo aplikasi]: (img/demo.png)
+
 #### Alur Pengerjaan
 - [x] Load dataset
 - [x] Exploratory Data Analysis (EDA)
