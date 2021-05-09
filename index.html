@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="./styles/tailwind.css" rel="stylesheet">
+  <link href="./script.js">
+  <title>prediksi kos</title>
+</head>
+<body>
+  <div class="bg-gray-200">
+      <div class="container p-8">
+        <h2 class="mb-4 text-center font-bold">prediksi harga kos (per-bulan) wilayah JATIM</h2>
+        <div class="w-full max-w-xs mx-auto">
+            <form class="input_data bg-white shadow-lg rounded-md px-8 pt-6 pb-8 mb-4">
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="panjang_kamar">
+                  Panjang Kamar (m)
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="panjang" type="text" placeholder="Panjang kamar">
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="lebar_kamar">
+                  Lebar Kamar (m)
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lebar" type="text" placeholder="Lebar kamar">
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="kamar_mandi_dalam">
+                  Kamar Mandi (VIP)
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="kamar_mandi_VIP" type="text" placeholder="Kamar mandi dalam">
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="kamar_mandi_luar">
+                  Kamar Mandi
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="kamar_mandi" type="text" placeholder="Kamar mandi luar">
+              </div>
+              <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md shadow-lg" id="tombol_form" value="predik" type="button">
+                  Prediksi
+                </button>
+              </div>
+              <h2 class="mt-3 font-bold text-gray-700">Hasil: Rp. <span class="rounded-md bg-teal-600 px-2 py-1 text-white text-xs" id="hasil"></span></h2>
+            </form>
+            <p class="text-center text-gray-500 text-xs pb-20">
+              &copy;2021 riddev. All rights reserved.
+            </p>
+        </div>
+    </div>
+  </div>
+</body>
+<script>
+  document.getElementById("tombol_form").
+  addEventListener("click", tampilkan_prediksi);
+  function tampilkan_prediksi(){
+    var panjang=document.getElementById("panjang").value;
+    var lebar=document.getElementById("lebar").value;
+    var kamar_mandi_VIP=document.getElementById("kamar_mandi_VIP").value;
+    var kamar_mandi=document.getElementById("kamar_mandi").value;
+    var predik = -1044292.70 + (235272.67 * panjang) + (132206.53 * lebar) - (186054.94 * kamar_mandi_VIP) + (5333.77 * kamar_mandi);
+    document.getElementById("hasil").innerHTML=predik;
+  } 
+</script>
+</html>
