@@ -1,4 +1,4 @@
-### Prediksi harga kos wilayah JATIM
+### Prediksi harga kos wilayah Jawa Timur
 
 <img src="img/app.png">
 
