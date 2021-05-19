@@ -1,6 +1,6 @@
 ### Prediksi harga kos wilayah Jawa Timur
 
-<img src="img/app.png">
+<img src="./img/app.png">
 
 #### Alur Pengerjaan
 - [x] Load dataset
