@@ -4,3 +4,6 @@
 .reset-button {
     box-shadow: 0px 0px 4px rgb(221, 40, 40);
 }
+.container {
+    height: 830px;
+}
