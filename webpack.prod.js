@@ -7,7 +7,8 @@ module.exports = merge(common, {
         plugins: [
             new CopyPlugin({
                 patterns: [
-                    {from: 'src/img', to: 'src/img'}
+                    {from: 'src/img', to: 'src/img'},
+                    {from: 'tailwind.css', to: 'tailwind.css'}
                 ],
             }),
         ],
